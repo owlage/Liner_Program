@@ -9,7 +9,7 @@ public class NumberFive {
 
     public NumberFive() {
         System.out.println("Enter the number of seconds in digits, the number must be an integer!");
-        secondsTotal = Util.scannerNum();
+        secondsTotal = Util.scannerNumber();
     }
 
     public int whatHour() {

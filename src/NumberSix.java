@@ -1,7 +1,7 @@
 public class NumberSix {
 
     /*
-6. For a given area, a linear program has been compiled that prints true if points with coordinates (x, y)
+        6. For a given area, a linear program has been compiled that prints true if points with coordinates (x, y)
         belongs to the filled area, and false if:
      */
 
@@ -9,9 +9,9 @@ public class NumberSix {
 
     public NumberSix() {
         System.out.println("Enter coordinate: x");
-        x = Util.scannerDoub();
+        x = Util.scannerDoubleNumber();
         System.out.println("Enter coordinate: y");
-        y = Util.scannerDoub();
+        y = Util.scannerDoubleNumber();
     }
 
     public void coordinateCalculation(){

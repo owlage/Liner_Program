@@ -11,7 +11,7 @@ public class NumberFour {
 
     public void numberEntry() {
         System.out.println("Enter a fractional number");
-        r = Util.scannerDoub();
+        r = Util.scannerDoubleNumber();
     }
 
     public static void main(String[] args) {

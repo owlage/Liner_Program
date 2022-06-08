@@ -13,11 +13,11 @@ public class NumberOne {
         NumberOne numberOne = new NumberOne();
 
         System.out.println("Enter number 'a'");
-        numberOne.a = Util.scannerNum();
+        numberOne.a = Util.scannerNumber();
         System.out.println("Enter number 'b'");
-        numberOne.b = Util.scannerNum();
+        numberOne.b = Util.scannerNumber();
         System.out.println("Enter number 'c'");
-        numberOne.c = Util.scannerNum();
+        numberOne.c = Util.scannerNumber();
 
         System.out.println(numberOne.mathResult(numberOne.a, numberOne.b, numberOne.c));
     }

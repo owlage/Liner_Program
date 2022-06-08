@@ -13,11 +13,11 @@ public class NumberTwo {
         NumberTwo numberTwo = new NumberTwo();
 
         System.out.println("Enter number 'a'");
-        numberTwo.a = Util.scannerDoub();
+        numberTwo.a = Util.scannerDoubleNumber();
         System.out.println("Enter number 'b'");
-        numberTwo.b = Util.scannerDoub();
+        numberTwo.b = Util.scannerDoubleNumber();
         System.out.println("Enter number 'c'");
-        numberTwo.c = Util.scannerDoub();
+        numberTwo.c = Util.scannerDoubleNumber();
 
         System.out.println(numberTwo.mathResult(numberTwo.a, numberTwo.b, numberTwo.c));
     }

@@ -1,0 +1,35 @@
+public class NumberTen {
+
+    //Three points A(x1,y1), B(x2,y2) and C(x3,y3) are given. Determine if they are on the same line.
+
+    public double x1, y1, x2, y2, x3, y3;
+
+    public NumberTen() {
+        System.out.println("Enter point coordinates №1");
+        x1 = Util.scannerDoubleNumber();
+        y1 = Util.scannerDoubleNumber();
+        System.out.println("Enter point coordinates №2");
+        x2 = Util.scannerDoubleNumber();
+        y2 = Util.scannerDoubleNumber();
+        System.out.println("Enter point coordinates №3");
+        x3 = Util.scannerDoubleNumber();
+        y3 = Util.scannerDoubleNumber();
+    }
+
+    public void determinationOfCoordinates(){
+        if ((x1 - x3) / (x2 - x3) == (y1 - y3) / (y2 - y3)) {
+            System.out.println("The points are on the same line");
+        } else {
+            System.out.println("Points do not lie on the same line");
+        }
+    }
+
+    public static void main(String[] args) {
+
+        NumberTen numberTen = new NumberTen();
+        numberTen.determinationOfCoordinates();
+
+
+
+    }
+}

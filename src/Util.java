@@ -4,33 +4,48 @@ public class Util {
 
     static Scanner scanner = new Scanner(System.in);
     static int numOne;
-    static double numDoub;
+    static double numDoubOne;
 
-    public static int scannerNum() {
+    public static int scannerNumber() {
         if (scanner.hasNextInt()) {
             numOne = scanner.nextInt();
             if (numOne < 1) {
                 System.out.println("Please enter a number greater than zero");
-                scannerNum();
+                scannerNumber();
             }
         } else {
             System.out.println("Please enter a number greater than zero or you have entered a number greater than 2147483647");
-            scannerNum();
+            scannerNumber();
         }
         return numOne;
     }
 
-    public static double scannerDoub() {
+    public static double scannerDoubleNumber() {
+        System.out.println("Please enter a number greater than zero");
         if (scanner.hasNextDouble()) {
-            numDoub = scanner.nextDouble();
-            if (numDoub < 1) {
+            numDoubOne = scanner.nextDouble();
+            if (numDoubOne < 1) {
                 System.out.println("Please enter a number greater than zero");
-                scannerDoub();
+                scannerDoubleNumber();
             }
         } else {
             System.out.println("Please enter a number greater than zero or you have entered a number greater than 2147483647");
-            scannerDoub();
+            scannerDoubleNumber();
         }
-        return numDoub;
+        return numDoubOne;
+    }
+
+    public static double angleInput() {
+        if (scanner.hasNextDouble()) {
+            numDoubOne = scanner.nextDouble();
+                if (numDoubOne < 1 || numDoubOne >= 180) {
+                    System.out.println("Enter any number from 1 to 179");
+                    angleInput();
+                }
+            } else {
+                System.out.println("Enter any number from 1 to 179");
+                angleInput();
+            }
+        return  numDoubOne;
     }
 }

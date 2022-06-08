@@ -17,9 +17,9 @@ public class NumberThree {
 
     NumberThree() {
         System.out.println("Enter number 'a'");
-        x = Util.scannerNum();
+        x = Util.scannerNumber();
         System.out.println("Enter number 'b'");
-        y = Util.scannerNum();
+        y = Util.scannerNumber();
     }
 
     public static void main(String[] args) {
