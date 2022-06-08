@@ -7,7 +7,7 @@ public class NumberSeven {
 
     public double angleA, angleB;
 
-    public void triangleСheck(){
+    public void triangleСheck(double angleA, double angleB){
         if (angleA + angleB <= 180) {
             System.out.println("Triangle exists");
             if (angleA == 90 || angleB == 90 || (angleA + angleB) == 90) {
@@ -25,7 +25,7 @@ public class NumberSeven {
         System.out.println("Enter 2 angles with enter, the angle cannot be less than 1 and greater than 179!");
         numberSeven.angleA = Util.angleInput();
         numberSeven.angleB = Util.angleInput();
-        numberSeven.triangleСheck();
+        numberSeven.triangleСheck(numberSeven.angleA, numberSeven.angleB);
 
     }
 }

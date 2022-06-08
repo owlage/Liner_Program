@@ -12,23 +12,24 @@ public class NumberFive {
         secondsTotal = Util.scannerNumber();
     }
 
-    public int whatHour() {
+    public int whatHour(int secondsTotal) {
         return secondsTotal / 3600;
     }
 
-    public int whatMinutes() {
+    public int whatMinutes(int secondsTotal) {
         return (secondsTotal % 3600) / 60;
     }
 
-    public int whatSeconds() {
+    public int whatSeconds(int secondsTotal) {
         return ((secondsTotal % 3600) % 60);
     }
 
     public static void main(String[] args) {
 
         NumberFive numberFive = new NumberFive();
-        System.out.println("hh = " + numberFive.whatHour() + ";" + "mm = " + numberFive.whatMinutes()
-                + ";" + "ss = " + numberFive.whatSeconds());
+        System.out.println("hh = " + numberFive.whatHour(numberFive.secondsTotal) + ";" +
+                "mm = " + numberFive.whatMinutes(numberFive.secondsTotal)
+                + ";" + "ss = " + numberFive.whatSeconds(numberFive.secondsTotal));
 
     }
 }

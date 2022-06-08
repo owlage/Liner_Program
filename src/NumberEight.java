@@ -6,7 +6,7 @@ public class NumberEight {
 
     public double numberA, numberB, numberC, numberD;
 
-    public double maxSearchValue(){
+    public double maxSearchValue(double numberA, double numberB, double numberC, double numberD){
         return Math.max(Math.min(numberA, numberB), Math.min(numberC, numberD));
     }
 
@@ -18,6 +18,7 @@ public class NumberEight {
         numberEight.numberC = Util.scannerDoubleNumber();
         numberEight.numberD = Util.scannerDoubleNumber();
 
-        System.out.println("Max value = " + numberEight.maxSearchValue());
+        System.out.println("Max value = " + numberEight.maxSearchValue(numberEight.numberA, numberEight.numberB,
+                numberEight.numberC, numberEight.numberD));
     }
 }

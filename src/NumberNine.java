@@ -16,7 +16,7 @@ public class NumberNine {
         y3 = Util.scannerDoubleNumber();
     }
 
-    public void determinationOfCoordinates(){
+    public void determinationOfCoordinates(double x1, double y1, double x2, double y2, double x3, double y3){
         if ((x1 - x3) / (x2 - x3) == (y1 - y3) / (y2 - y3)) {
             System.out.println("The points are on the same line");
         } else {
@@ -27,7 +27,7 @@ public class NumberNine {
     public static void main(String[] args) {
 
         NumberNine numberTen = new NumberNine();
-        numberTen.determinationOfCoordinates();
+        numberTen.determinationOfCoordinates(numberTen.x1, numberTen.y1, numberTen.x2, numberTen.y2, numberTen.x3, numberTen.y3);
 
 
 

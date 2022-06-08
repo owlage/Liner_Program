@@ -14,7 +14,7 @@ public class NumberSix {
         y = Util.scannerDoubleNumber();
     }
 
-    public void coordinateCalculation(){
+    public void coordinateCalculation(double x, double y){
         if (x > -5.0 & x < -3.0 || x < 5.0 & x > 2.0) {
             if (y <= 0.0 && y > -4.0) {
                 System.out.println("true");
@@ -34,7 +34,7 @@ public class NumberSix {
     public static void main(String[] args) {
 
         NumberSix numberSix = new NumberSix();
-        numberSix.coordinateCalculation();
+        numberSix.coordinateCalculation(numberSix.x, numberSix.y);
 
     }
 }

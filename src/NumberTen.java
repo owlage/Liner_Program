@@ -22,7 +22,7 @@ public class NumberTen {
         brickDepth = Util.scannerDoubleNumber();
     }
 
-    public void brigGoIn(){
+    public void brigGoIn(double brickLength, double brickWidth, double brickDepth, double holeLength, double holeWidth){
         if (holeLength >= brickLength && holeWidth >= brickWidth || holeLength >= brickWidth && holeWidth >= brickLength ||
                 holeLength >= brickLength && holeWidth >= brickDepth || holeLength >= brickDepth && holeWidth >= brickLength ||
                 holeLength >= brickWidth && holeWidth >= brickDepth || holeLength >= brickDepth && holeWidth >= brickWidth) {
@@ -35,7 +35,8 @@ public class NumberTen {
     public static void main(String[] args) {
 
         NumberTen numberEleven = new NumberTen();
-        numberEleven.brigGoIn();
+        numberEleven.brigGoIn(numberEleven.brickLength, numberEleven.brickWidth, numberEleven.brickDepth,
+                numberEleven.holeLength, numberEleven.holeWidth);
 
     }
 }
