@@ -9,6 +9,11 @@ the number and output the resulting value of the number.
 minutes, and seconds in the following form: ННч ММмин SSc.
 6. For the given area, write a linear program that prints true if the point with coordinates (x, y) belongs to the shaded area,
 and false otherwise:
+7. Two angles of a triangle are given (in degrees). Determine whether such a triangle exists, and if so, whether it is a right triangle. 
+8. Find max{min(a, b), min(c, d)}.
+9. Three points A(x1,y1), B(x2,y2) and C(x3,y3) are given. Determine if they are on the same line.
+10. The dimensions A, B of the rectangular hole and the dimensions x, y, z of the brick are given. Determine if the brick will go through the hole. 
+11. Calculate function value:
 
 RU:
 Задачи:
@@ -21,3 +26,10 @@ RU:
 минутах и секундах в следующей форме: ННч ММмин SSc.
 6.  Для данной области составить линейную программу, которая печатает true, если точка с координатами (х, у) принадлежит закрашенной области, 
 и false — в противном случае:
+7.  Даны два угла треугольника (в градусах). Определить, существует ли такой треугольник, и если да, то будет ли он прямоугольным.
+8.  Найти max{min(a, b), min(c, d)}.
+9.  Даны три точки А(х1,у1), В(х2,у2) и С(х3,у3). Определить, будут ли они расположены на одной прямой.
+10. Заданы размеры А, В прямоугольного отверстия и размеры х, у, z кирпича. Определить, пройдет ли кирпич через отверстие.
+11. Вычислить значение функции:
+
+
