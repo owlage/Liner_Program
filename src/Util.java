@@ -7,6 +7,7 @@ public class Util {
     static double numDoubOne;
 
     public static int scannerNumber() {
+        System.out.println("Enter a number greater than zero");
         if (scanner.hasNextInt()) {
             numOne = scanner.nextInt();
             if (numOne < 1) {
