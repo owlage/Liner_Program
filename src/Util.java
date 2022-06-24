@@ -18,7 +18,6 @@ public class Util {
             System.out.println("Please enter a number greater than zero or you have entered a number greater than 2147483647");
             scannerNumber();
         }
-        scanner.close();
         return numOne;
     }
 
@@ -35,7 +34,6 @@ public class Util {
             System.out.println("Please enter a number greater than zero or you have entered a number greater than 2147483647");
             scannerDoubleNumber();
         }
-        scanner.close();
         return numDoubOne;
     }
 
@@ -51,7 +49,6 @@ public class Util {
                 System.out.println("Enter any number from 1 to 179");
                 angleInput();
             }
-        scanner.close();
         return  numDoubOne;
     }
 }
